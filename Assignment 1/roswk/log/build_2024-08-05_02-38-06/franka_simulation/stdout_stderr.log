@@ -1,0 +1,23 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+writing franka_simulation.egg-info/PKG-INFO
+writing dependency_links to franka_simulation.egg-info/dependency_links.txt
+writing entry points to franka_simulation.egg-info/entry_points.txt
+writing requirements to franka_simulation.egg-info/requires.txt
+writing top-level names to franka_simulation.egg-info/top_level.txt
+reading manifest file 'franka_simulation.egg-info/SOURCES.txt'
+writing manifest file 'franka_simulation.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/install/franka_simulation/lib/python3.10/site-packages/franka-simulation.egg-link (link to .)
+
+Installed /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/build/franka_simulation
+running symlink_data
+symbolically linking /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/build/franka_simulation/meshes/chain_link1.stl -> /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/install/franka_simulation/share/franka_simulation/meshes
+symbolically linking /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/build/franka_simulation/meshes/chain_link_grip_r.stl -> /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/install/franka_simulation/share/franka_simulation/meshes
+symbolically linking /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/build/franka_simulation/meshes/chain_link2.stl -> /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/install/franka_simulation/share/franka_simulation/meshes
+symbolically linking /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/build/franka_simulation/meshes/chain_link_grip_l.stl -> /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/install/franka_simulation/share/franka_simulation/meshes
+symbolically linking /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/build/franka_simulation/meshes/chain_link3.stl -> /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/install/franka_simulation/share/franka_simulation/meshes
+symbolically linking /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/build/franka_simulation/meshes/chain_link4.stl -> /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/install/franka_simulation/share/franka_simulation/meshes
+symbolically linking /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/build/franka_simulation/meshes/chain_link5.stl -> /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/install/franka_simulation/share/franka_simulation/meshes

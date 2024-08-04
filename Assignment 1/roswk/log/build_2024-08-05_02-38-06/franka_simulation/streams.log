@@ -1,0 +1,25 @@
+[0.929s] Invoking command in '/home/vardan/Introduction-to-Robotics/Assignment 1/roswk/build/franka_simulation': PYTHONPATH=/home/vardan/Introduction-to-Robotics/Assignment 1/roswk/build/franka_simulation/prefix_override:/home/vardan/Introduction-to-Robotics/Assignment 1/roswk/install/franka_simulation/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/build/franka_simulation/build --no-deps symlink_data
+[1.283s] running develop
+[1.283s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.284s]   warnings.warn(
+[1.493s] running egg_info
+[1.494s] writing franka_simulation.egg-info/PKG-INFO
+[1.494s] writing dependency_links to franka_simulation.egg-info/dependency_links.txt
+[1.494s] writing entry points to franka_simulation.egg-info/entry_points.txt
+[1.494s] writing requirements to franka_simulation.egg-info/requires.txt
+[1.495s] writing top-level names to franka_simulation.egg-info/top_level.txt
+[1.498s] reading manifest file 'franka_simulation.egg-info/SOURCES.txt'
+[1.499s] writing manifest file 'franka_simulation.egg-info/SOURCES.txt'
+[1.502s] running build_ext
+[1.502s] Creating /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/install/franka_simulation/lib/python3.10/site-packages/franka-simulation.egg-link (link to .)
+[1.504s] 
+[1.504s] Installed /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/build/franka_simulation
+[1.504s] running symlink_data
+[1.504s] symbolically linking /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/build/franka_simulation/meshes/chain_link1.stl -> /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/install/franka_simulation/share/franka_simulation/meshes
+[1.505s] symbolically linking /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/build/franka_simulation/meshes/chain_link_grip_r.stl -> /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/install/franka_simulation/share/franka_simulation/meshes
+[1.505s] symbolically linking /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/build/franka_simulation/meshes/chain_link2.stl -> /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/install/franka_simulation/share/franka_simulation/meshes
+[1.506s] symbolically linking /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/build/franka_simulation/meshes/chain_link_grip_l.stl -> /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/install/franka_simulation/share/franka_simulation/meshes
+[1.506s] symbolically linking /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/build/franka_simulation/meshes/chain_link3.stl -> /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/install/franka_simulation/share/franka_simulation/meshes
+[1.507s] symbolically linking /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/build/franka_simulation/meshes/chain_link4.stl -> /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/install/franka_simulation/share/franka_simulation/meshes
+[1.509s] symbolically linking /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/build/franka_simulation/meshes/chain_link5.stl -> /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/install/franka_simulation/share/franka_simulation/meshes
+[1.577s] Invoked command in '/home/vardan/Introduction-to-Robotics/Assignment 1/roswk/build/franka_simulation' returned '0': PYTHONPATH=/home/vardan/Introduction-to-Robotics/Assignment 1/roswk/build/franka_simulation/prefix_override:/home/vardan/Introduction-to-Robotics/Assignment 1/roswk/install/franka_simulation/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/vardan/Introduction-to-Robotics/Assignment 1/roswk/build/franka_simulation/build --no-deps symlink_data

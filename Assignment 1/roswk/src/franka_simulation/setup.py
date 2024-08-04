@@ -1,6 +1,7 @@
 from setuptools import find_packages, setup
 import os
-import glob
+from glob import glob
+
 package_name = 'franka_simulation'
 
 setup(
@@ -13,7 +14,7 @@ setup(
         ('share/' + package_name, ['package.xml']),
          (os.path.join('share', package_name, 'description'), glob('description/*.xacro')),
         (os.path.join('share', package_name, 'meshes'),
-         glob('meshes/*.STL')),
+         glob('meshes/*.stl')),
         (os.path.join('share', package_name, 'launch'),
          glob('launch/*.launch.py')),
     ],
