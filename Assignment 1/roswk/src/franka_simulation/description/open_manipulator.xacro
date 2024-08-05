@@ -1,13 +1,43 @@
 <?xml version="1.0"?>
 <!-- Open_Manipulator Chain -->
 <robot name="open_manipulator" xmlns:xacro="http://ros.org/wiki/xacro">
+<material name="black">
+    <color rgba="0.0 0.0 0.0 1.0"/>
+  </material>
+
+  <material name="white">
+    <color rgba="1.0 1.0 1.0 1.0"/>
+  </material>
+
+  <material name="red">
+    <color rgba="0.8 0.0 0.0 1.0"/>
+  </material>
+
+  <material name="blue">
+    <color rgba="0.0 0.0 0.8 1.0"/>
+  </material>
+
+  <material name="green">
+    <color rgba="0.0 0.8 0.0 1.0"/>
+  </material>
+
+  <material name="grey">
+    <color rgba="0.5 0.5 0.5 1.0"/>
+  </material>
+  <material name="orange">
+    <color rgba="${255/255} ${108/255} ${10/255} 1.0"/>
+  </material>
+
+  <material name="brown">
+    <color rgba="${222/255} ${207/255} ${195/255} 1.0"/>
+  </material>
 
   <!-- Link 1 -->
   <link name="link1">
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://franka_simulation/meshes/chain_link1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://meshes/chain_link1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey"/>
     </visual>
@@ -15,7 +45,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://franka_simulation/meshes/chain_link1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://meshes/chain_link1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
 
@@ -42,7 +72,7 @@
     <visual>
       <origin xyz="0 0 0.019" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://franka_simulation/meshes/chain_link2.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://meshes/chain_link2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey"/>
     </visual>
@@ -50,7 +80,7 @@
     <collision>
       <origin xyz="0 0 0.019" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://franka_simulation/meshes/chain_link2.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://meshes/chain_link2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
 
@@ -77,7 +107,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://franka_simulation/meshes/chain_link3.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://meshes/chain_link3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey"/>
     </visual>
@@ -85,7 +115,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://franka_simulation/meshes/chain_link3.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://meshes/chain_link3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
 
@@ -112,7 +142,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://franka_simulation/meshes/chain_link4.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://meshes/chain_link4.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey"/>
     </visual>
@@ -120,7 +150,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://franka_simulation/meshes/chain_link4.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://meshes/chain_link4.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
 
@@ -147,7 +177,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://franka_simulation/meshes/chain_link5.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://meshes/chain_link5.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey"/>
     </visual>
@@ -155,7 +185,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://franka_simulation/meshes/chain_link5.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://meshes/chain_link5.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
 
@@ -182,7 +212,7 @@
     <visual>
       <origin xyz="0.0 0.0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://franka_simulation/meshes/chain_link_grip_l.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://meshes/chain_link_grip_l.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey"/>
     </visual>
@@ -190,7 +220,7 @@
     <collision>
       <origin xyz="0.0 0.0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://franka_simulation/meshes/chain_link_grip_l.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://meshes/chain_link_grip_l.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
 
@@ -218,7 +248,7 @@
     <visual>
       <origin xyz="0.0 -0.0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://franka_simulation/meshes/chain_link_grip_r.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://meshes/chain_link_grip_r.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey"/>
     </visual>
@@ -226,7 +256,7 @@
     <collision>
       <origin xyz="0.0 -0.0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://franka_simulation/meshes/chain_link_grip_r.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://meshes/chain_link_grip_r.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
 

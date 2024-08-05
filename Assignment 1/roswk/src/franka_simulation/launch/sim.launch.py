@@ -30,8 +30,14 @@ def generate_launch_description():
         parameters=[robot_description, {'use_sim_time': use_sim_time}]
     )
 
+    node_joint_state_publisher = Node(
+        package='joint_state_publisher_gui',
+        executable='joint_state_publisher_gui',
+        output='screen'
+    )
+
     return LaunchDescription([
         declare_use_sim_time,
         node_robot_state_publisher,
-        # node_joint_state_publisher,
+        node_joint_state_publisher,
     ])

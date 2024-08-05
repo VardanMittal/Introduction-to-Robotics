@@ -1,7 +1,6 @@
 package.xml
 setup.cfg
 setup.py
-description/materials.xacro
 description/open_manipulator.xacro
 franka_simulation/__init__.py
 franka_simulation.egg-info/PKG-INFO
