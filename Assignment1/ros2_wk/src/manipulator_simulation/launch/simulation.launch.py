@@ -37,8 +37,18 @@ def generate_launch_description():
         output='screen'
     )
 
+    rviz_config_path = "/home/vardan/Introduction-to-Robotics/Assignment1/ros2_wk/src/manipulator_simulation/config/rvizSim.rviz"
+    rviz_launcher = Node(
+        package='rviz2',
+        executable='rviz2',
+        name='rviz2',
+        output='screen',
+        arguments=['-d', rviz_config_path]
+    )
+
     return LaunchDescription([
         declare_use_sim_time,
         node_robot_state_publisher,
         node_joint_state_publisher,
+        rviz_launcher
     ])
