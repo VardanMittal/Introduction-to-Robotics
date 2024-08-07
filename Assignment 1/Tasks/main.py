@@ -29,7 +29,6 @@ def trajectory(x,y):
     ee_traj = []
     for x_target,y_target in zip(x,y):
         solution = invKinematicsSolver(x_target, y_target, 4.0, 3.0)
-        # print(solution)
         """We have two sets of variables -ve theta and +ve theta as the path traced using both of them going to overlap we are only considering +ve theta results..."""
         q1 = solution[0]
         q2 = solution[1]
