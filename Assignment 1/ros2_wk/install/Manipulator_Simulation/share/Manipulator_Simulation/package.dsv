@@ -1,0 +1,9 @@
+source;share/Manipulator_Simulation/hook/pythonpath.ps1
+source;share/Manipulator_Simulation/hook/pythonpath.dsv
+source;share/Manipulator_Simulation/hook/pythonpath.sh
+source;share/Manipulator_Simulation/hook/ament_prefix_path.ps1
+source;share/Manipulator_Simulation/hook/ament_prefix_path.dsv
+source;share/Manipulator_Simulation/hook/ament_prefix_path.sh
+source;../../build/Manipulator_Simulation/share/Manipulator_Simulation/hook/pythonpath_develop.ps1
+source;../../build/Manipulator_Simulation/share/Manipulator_Simulation/hook/pythonpath_develop.dsv
+source;../../build/Manipulator_Simulation/share/Manipulator_Simulation/hook/pythonpath_develop.sh

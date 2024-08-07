@@ -1,0 +1,25 @@
+[0.857s] Invoking command in '/home/vardan/Introduction-to-Robotics/Assignment 1/ros2_wk/build/Manipulator_Simulation': PYTHONPATH=/home/vardan/Introduction-to-Robotics/Assignment 1/ros2_wk/build/Manipulator_Simulation/prefix_override:/home/vardan/Introduction-to-Robotics/Assignment 1/ros2_wk/install/Manipulator_Simulation/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/vardan/Introduction-to-Robotics/Assignment 1/ros2_wk/build/Manipulator_Simulation/build --no-deps symlink_data
+[1.202s] running develop
+[1.202s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.202s]   warnings.warn(
+[1.409s] running egg_info
+[1.409s] creating Manipulator_Simulation.egg-info
+[1.410s] writing Manipulator_Simulation.egg-info/PKG-INFO
+[1.410s] writing dependency_links to Manipulator_Simulation.egg-info/dependency_links.txt
+[1.411s] writing entry points to Manipulator_Simulation.egg-info/entry_points.txt
+[1.412s] writing requirements to Manipulator_Simulation.egg-info/requires.txt
+[1.412s] writing top-level names to Manipulator_Simulation.egg-info/top_level.txt
+[1.412s] writing manifest file 'Manipulator_Simulation.egg-info/SOURCES.txt'
+[1.415s] reading manifest file 'Manipulator_Simulation.egg-info/SOURCES.txt'
+[1.417s] writing manifest file 'Manipulator_Simulation.egg-info/SOURCES.txt'
+[1.421s] running build_ext
+[1.421s] Creating /home/vardan/Introduction-to-Robotics/Assignment 1/ros2_wk/install/Manipulator_Simulation/lib/python3.10/site-packages/Manipulator-Simulation.egg-link (link to .)
+[1.422s] 
+[1.423s] Installed /home/vardan/Introduction-to-Robotics/Assignment 1/ros2_wk/build/Manipulator_Simulation
+[1.423s] running symlink_data
+[1.424s] creating /home/vardan/Introduction-to-Robotics/Assignment 1/ros2_wk/install/Manipulator_Simulation/share/ament_index
+[1.424s] creating /home/vardan/Introduction-to-Robotics/Assignment 1/ros2_wk/install/Manipulator_Simulation/share/ament_index/resource_index
+[1.425s] creating /home/vardan/Introduction-to-Robotics/Assignment 1/ros2_wk/install/Manipulator_Simulation/share/ament_index/resource_index/packages
+[1.425s] symbolically linking /home/vardan/Introduction-to-Robotics/Assignment 1/ros2_wk/build/Manipulator_Simulation/resource/Manipulator_Simulation -> /home/vardan/Introduction-to-Robotics/Assignment 1/ros2_wk/install/Manipulator_Simulation/share/ament_index/resource_index/packages
+[1.425s] symbolically linking /home/vardan/Introduction-to-Robotics/Assignment 1/ros2_wk/build/Manipulator_Simulation/package.xml -> /home/vardan/Introduction-to-Robotics/Assignment 1/ros2_wk/install/Manipulator_Simulation/share/Manipulator_Simulation
+[1.476s] Invoked command in '/home/vardan/Introduction-to-Robotics/Assignment 1/ros2_wk/build/Manipulator_Simulation' returned '0': PYTHONPATH=/home/vardan/Introduction-to-Robotics/Assignment 1/ros2_wk/build/Manipulator_Simulation/prefix_override:/home/vardan/Introduction-to-Robotics/Assignment 1/ros2_wk/install/Manipulator_Simulation/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/vardan/Introduction-to-Robotics/Assignment 1/ros2_wk/build/Manipulator_Simulation/build --no-deps symlink_data

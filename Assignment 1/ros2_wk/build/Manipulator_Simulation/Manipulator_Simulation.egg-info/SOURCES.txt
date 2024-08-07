@@ -1,0 +1,12 @@
+package.xml
+setup.cfg
+setup.py
+Manipulator_Simulation/__init__.py
+Manipulator_Simulation.egg-info/PKG-INFO
+Manipulator_Simulation.egg-info/SOURCES.txt
+Manipulator_Simulation.egg-info/dependency_links.txt
+Manipulator_Simulation.egg-info/entry_points.txt
+Manipulator_Simulation.egg-info/requires.txt
+Manipulator_Simulation.egg-info/top_level.txt
+Manipulator_Simulation.egg-info/zip-safe
+resource/Manipulator_Simulation
