@@ -1,1 +1,1 @@
-/home/vardan/Introduction-to-Robotics/Assignment 1/ros2_wk/build/manipulator_simulation/launch/simulation.launch.py
+/home/vardan/Introduction-to-Robotics/Assignment1/ros2_wk/build/manipulator_simulation/launch/simulation.launch.py
