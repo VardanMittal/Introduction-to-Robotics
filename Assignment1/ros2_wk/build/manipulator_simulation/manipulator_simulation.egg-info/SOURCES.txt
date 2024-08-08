@@ -24,4 +24,3 @@ urdf/open_manipulator.gazebo.xacro
 urdf/open_manipulator.transmission.xacro
 urdf/open_manipulator.urdf.xacro
 urdf/open_manipulator_robot.urdf.xacro
-world/Gazebo_simulation.world

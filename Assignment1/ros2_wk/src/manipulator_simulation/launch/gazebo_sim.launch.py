@@ -18,7 +18,6 @@ def generate_launch_description():
 
     pkg_path = get_package_share_directory('manipulator_simulation')
     xacro_file = os.path.join(pkg_path, 'urdf', 'open_manipulator_robot.urdf.xacro')
-    world_file = os.path.join(pkg_path, 'world', 'Gazebo_simulation.world')
     if not os.path.exists(xacro_file):
         raise FileNotFoundError(f"Xacro file not found: {xacro_file}")
 
@@ -52,8 +51,8 @@ def generate_launch_description():
 
     return LaunchDescription([
         declare_use_sim_time,
-        gazebo_launcher,
         node_robot_state_publisher,
         node_joint_state_publisher,
-        spawn_entity
+        spawn_entity,
+        gazebo_launcher,
     ])
