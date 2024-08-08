@@ -6,7 +6,8 @@
   <description>TODO: Package description</description>
   <maintainer email="vardanmittal000@gmail.com">vardan</maintainer>
   <license>TODO: License declaration</license>
-  
+  <depend>gazebo_ros</depend>
+  <depend>robot_state_publisher</depend>
   <depend>rclpy</depend>
 
   <test_depend>ament_copyright</test_depend>
