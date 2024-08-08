@@ -1,0 +1,1 @@
+/home/vardan/Introduction-to-Robotics/build/manipulator_simulation/launch/simulation.launch.py

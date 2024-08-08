@@ -37,10 +37,11 @@ def generate_launch_description():
         executable='joint_state_publisher_gui',
         output='screen'
     )
-    gazebo = ExecuteProcess(
-        cmd=['gazebo', '--verbose', world_file, '-s', 'libgazebo_ros_factory.so'],
-        output='screen'
-    )
+    gazebo_launcher = ExecuteProcess(
+            cmd=['gazebo', '--verbose',
+                 '-s', 'libgazebo_ros_factory.so'],
+            output='screen')
+    
     spawn_entity = Node(
         package='gazebo_ros',
         executable='spawn_entity.py',
@@ -51,8 +52,8 @@ def generate_launch_description():
 
     return LaunchDescription([
         declare_use_sim_time,
+        gazebo_launcher,
         node_robot_state_publisher,
         node_joint_state_publisher,
-        gazebo,
         spawn_entity
     ])
