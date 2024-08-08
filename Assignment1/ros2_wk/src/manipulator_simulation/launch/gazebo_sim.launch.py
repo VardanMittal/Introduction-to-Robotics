@@ -18,6 +18,7 @@ def generate_launch_description():
 
     pkg_path = get_package_share_directory('manipulator_simulation')
     xacro_file = os.path.join(pkg_path, 'urdf', 'open_manipulator_robot.urdf.xacro')
+    world_file = os.path.join(pkg_path, 'world', 'Gazebo_simulation.world')
     if not os.path.exists(xacro_file):
         raise FileNotFoundError(f"Xacro file not found: {xacro_file}")
 
@@ -36,16 +37,11 @@ def generate_launch_description():
         executable='joint_state_publisher_gui',
         output='screen'
     )
-    rviz_config_path = "/home/vardan/Introduction-to-Robotics/Assignment1/ros2_wk/src/manipulator_simulation/config/rviz_simulation.rviz"
-    rviz_launcher = Node(
-        package='rviz2',
-        executable='rviz2',
-        name='rviz2',
-        output='screen',
-        arguments=['-d', rviz_config_path]
+    gazebo = ExecuteProcess(
+        cmd=['gazebo', '--verbose', world_file, '-s', 'libgazebo_ros_factory.so'],
+        output='screen'
     )
-
-    gazebo_launcher = Node(
+    spawn_entity = Node(
         package='gazebo_ros',
         executable='spawn_entity.py',
         name='gripper',
@@ -57,5 +53,6 @@ def generate_launch_description():
         declare_use_sim_time,
         node_robot_state_publisher,
         node_joint_state_publisher,
-        rviz_launcher,
+        gazebo,
+        spawn_entity
     ])
