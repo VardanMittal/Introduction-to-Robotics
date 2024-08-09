@@ -1,1 +1,0 @@
-/home/vardan/Introduction-to-Robotics/build/manipulator_simulation/launch/gazebo_sim.launch.py
