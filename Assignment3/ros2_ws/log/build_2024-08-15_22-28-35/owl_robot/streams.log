@@ -1,0 +1,40 @@
+[1.189s] Invoking command in '/home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot': PYTHONPATH=/home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/prefix_override:/home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/build --no-deps symlink_data
+[1.679s] running develop
+[1.680s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.680s]   warnings.warn(
+[1.974s] running egg_info
+[1.975s] creating owl_robot.egg-info
+[1.975s] writing owl_robot.egg-info/PKG-INFO
+[1.976s] writing dependency_links to owl_robot.egg-info/dependency_links.txt
+[1.976s] writing entry points to owl_robot.egg-info/entry_points.txt
+[1.976s] writing requirements to owl_robot.egg-info/requires.txt
+[1.977s] writing top-level names to owl_robot.egg-info/top_level.txt
+[1.977s] writing manifest file 'owl_robot.egg-info/SOURCES.txt'
+[1.979s] reading manifest file 'owl_robot.egg-info/SOURCES.txt'
+[1.980s] writing manifest file 'owl_robot.egg-info/SOURCES.txt'
+[1.985s] running build_ext
+[1.985s] Creating /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/lib/python3.10/site-packages/owl-robot.egg-link (link to .)
+[1.986s] 
+[1.986s] Installed /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot
+[1.987s] running symlink_data
+[1.987s] creating /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/ament_index
+[1.987s] creating /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/ament_index/resource_index
+[1.987s] creating /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/ament_index/resource_index/packages
+[1.988s] symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/resource/owl_robot -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/ament_index/resource_index/packages
+[1.988s] symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/package.xml -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot
+[1.988s] creating /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/urdf
+[1.989s] symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/urdf/robot.xacro -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/urdf
+[1.989s] symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/urdf/robot.urdf -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/urdf
+[1.990s] symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/urdf/robot_active.urdf -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/urdf
+[1.990s] creating /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/meshes
+[1.991s] symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/meshes/w2w3_link.STL -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/meshes
+[1.992s] symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/meshes/elbow_link.STL -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/meshes
+[1.992s] symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/meshes/base_link.STL -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/meshes
+[1.994s] symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/meshes/shoulder_link.STL -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/meshes
+[1.994s] symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/meshes/end_effector_link.STL -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/meshes
+[1.994s] symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/meshes/link2.STL -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/meshes
+[1.995s] symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/meshes/link1.STL -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/meshes
+[1.995s] creating /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/launch
+[1.996s] symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/launch/rviz.launch.py -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/launch
+[1.996s] symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/launch/gazebo.launch.py -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/launch
+[2.062s] Invoked command in '/home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot' returned '0': PYTHONPATH=/home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/prefix_override:/home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/build --no-deps symlink_data

@@ -1,1 +1,0 @@
-/home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/src/OWL_Robot/launch/gazebo.launch.py
