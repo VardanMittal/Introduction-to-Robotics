@@ -1,8 +1,8 @@
 package.xml
 setup.cfg
 setup.py
-launch/gazebo.launch.py
 launch/rviz.launch.py
+launch/sim.launch.py
 meshes/base_link.STL
 meshes/elbow_link.STL
 meshes/end_effector_link.STL

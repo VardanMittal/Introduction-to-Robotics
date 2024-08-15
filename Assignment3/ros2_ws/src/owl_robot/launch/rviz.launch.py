@@ -36,7 +36,7 @@ def generate_launch_description():
         executable='joint_state_publisher_gui',
         output='screen'
     )
-    rviz_config_path = "/home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/src/OWL_Robot/config/OWL_rviz.rviz"
+    rviz_config_path = "/home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/src/owl_robot/config/OWL_rviz.rviz"
     rviz_launcher = Node(
         package='rviz2',
         executable='rviz2',
