@@ -19,7 +19,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="$(find owl_robot)/meshes/base_link.STL"/>
+        <mesh filename="package://owl_robot/meshes/base_link.STL"/>
       </geometry>
       <material name="">
         <color rgba="0.89804 0.91765 0.92941 1"/>
@@ -28,7 +28,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="$(find owl_robot)/meshes/base_link.STL"/>
+        <mesh filename="package://owl_robot/meshes/base_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -41,7 +41,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="$(find owl_robot)/meshes/shoulder_link.STL"/>
+        <mesh filename="package://owl_robot/meshes/shoulder_link.STL"/>
       </geometry>
       <material name="">
         <color rgba="0.79216 0.81961 0.93333 1"/>
@@ -50,7 +50,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="$(find owl_robot)/meshes/shoulder_link.STL"/>
+        <mesh filename="package://owl_robot/meshes/shoulder_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -70,7 +70,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="$(find owl_robot)/meshes/link1.STL"/>
+        <mesh filename="package://owl_robot/meshes/link1.STL"/>
       </geometry>
       <material name="">
         <color rgba="0.79216 0.81961 0.93333 1"/>
@@ -79,7 +79,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="$(find owl_robot)/meshes/link1.STL"/>
+        <mesh filename="package://owl_robot/meshes/link1.STL"/>
       </geometry>
     </collision>
   </link>
@@ -99,7 +99,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="$(find owl_robot)/meshes/elbow_link.STL"/>
+        <mesh filename="package://owl_robot/meshes/elbow_link.STL"/>
       </geometry>
       <material name="">
         <color rgba="0.79216 0.81961 0.93333 1"/>
@@ -108,7 +108,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="$(find owl_robot)/meshes/elbow_link.STL"/>
+        <mesh filename="package://owl_robot/meshes/elbow_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -128,7 +128,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="$(find owl_robot)/meshes/link2.STL"/>
+        <mesh filename="package://owl_robot/meshes/link2.STL"/>
       </geometry>
       <material name="">
         <color rgba="0.79216 0.81961 0.93333 1"/>
@@ -137,7 +137,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="$(find owl_robot)/meshes/link2.STL"/>
+        <mesh filename="package://owl_robot/meshes/link2.STL"/>
       </geometry>
     </collision>
   </link>
@@ -157,7 +157,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="$(find owl_robot)/meshes/w2w3_link.STL"/>
+        <mesh filename="package://owl_robot/meshes/w2w3_link.STL"/>
       </geometry>
       <material name="">
         <color rgba="0.79216 0.81961 0.93333 1"/>
@@ -166,7 +166,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="$(find owl_robot)/meshes/w2w3_link.STL"/>
+        <mesh filename="package://owl_robot/meshes/w2w3_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -186,7 +186,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="$(find owl_robot)/meshes/end_effector_link.STL"/>
+        <mesh filename="package://owl_robot/meshes/end_effector_link.STL"/>
       </geometry>
       <material name="">
         <color rgba="0.79216 0.81961 0.93333 1"/>
@@ -195,7 +195,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="$(find owl_robot)/meshes/end_effector_link.STL"/>
+        <mesh filename="package://owl_robot/meshes/end_effector_link.STL"/>
       </geometry>
     </collision>
   </link>

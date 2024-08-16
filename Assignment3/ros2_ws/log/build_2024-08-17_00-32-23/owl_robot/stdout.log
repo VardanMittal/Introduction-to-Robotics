@@ -1,6 +1,4 @@
 running develop
-/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
-  warnings.warn(
 running egg_info
 creating owl_robot.egg-info
 writing owl_robot.egg-info/PKG-INFO
@@ -23,16 +21,16 @@ symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/b
 symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/package.xml -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot
 creating /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/urdf
 symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/urdf/robot.xacro -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/urdf
-symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/urdf/robot.urdf -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/urdf
 symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/urdf/robot_active.urdf -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/urdf
+symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/urdf/robot.urdf -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/urdf
 creating /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/meshes
-symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/meshes/w2w3_link.STL -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/meshes
-symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/meshes/elbow_link.STL -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/meshes
 symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/meshes/base_link.STL -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/meshes
-symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/meshes/shoulder_link.STL -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/meshes
-symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/meshes/end_effector_link.STL -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/meshes
 symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/meshes/link2.STL -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/meshes
 symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/meshes/link1.STL -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/meshes
+symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/meshes/w2w3_link.STL -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/meshes
+symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/meshes/shoulder_link.STL -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/meshes
+symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/meshes/end_effector_link.STL -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/meshes
+symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/meshes/elbow_link.STL -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/meshes
 creating /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/launch
 symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/launch/rviz.launch.py -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/launch
 symbolically linking /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/launch/sim.launch.py -> /home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/install/owl_robot/share/owl_robot/launch
