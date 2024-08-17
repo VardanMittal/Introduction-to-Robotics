@@ -27,7 +27,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "EndEffectorPosition=owl_robot.EndEffectorPosition:main"
+            'EndEffectorPose=owl_robot.end_effector_pose:main'
         ],
     },
 )

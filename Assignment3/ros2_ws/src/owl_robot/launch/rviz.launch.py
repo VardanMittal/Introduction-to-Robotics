@@ -44,9 +44,17 @@ def generate_launch_description():
         output='screen',
         arguments=['-d', rviz_config_path]
     )
+
+    node_EE_data = Node(
+        package='owl_robot',
+        executable='EndEffectorPose',
+        name='end_effector_pose',
+        output='log'
+    )
     return LaunchDescription([
         declare_use_sim_time,
         node_robot_state_publisher,
         node_joint_state_publisher,
         rviz_launcher,
+        # node_EE_data,
     ])

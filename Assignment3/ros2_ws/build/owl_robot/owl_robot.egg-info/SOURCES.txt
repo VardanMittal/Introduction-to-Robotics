@@ -10,8 +10,8 @@ meshes/link1.STL
 meshes/link2.STL
 meshes/shoulder_link.STL
 meshes/w2w3_link.STL
-owl_robot/EndEffectorPosition.py
 owl_robot/__init__.py
+owl_robot/end_effector_pose.py
 owl_robot.egg-info/PKG-INFO
 owl_robot.egg-info/SOURCES.txt
 owl_robot.egg-info/dependency_links.txt

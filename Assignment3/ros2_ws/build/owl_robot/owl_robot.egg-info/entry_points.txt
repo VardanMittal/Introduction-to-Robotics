@@ -1,3 +1,3 @@
 [console_scripts]
-EndEffectorPosition = owl_robot.EndEffectorPosition:main
+EndEffectorPose = owl_robot.end_effector_pose:main
 
