@@ -19,7 +19,7 @@ class EndEffectorPose(Node):
 
         self.get_logger().info(f'End-Effector Position: x={position.x}, y={position.y}, z={position.z}')
 
-        self.get_logger().info(f'End-Effector Orientation: x={orientation.x}, y={orientation.y}, z={orientation.z}, w={orientation.w}')
+        self.get_logger().info(f'End-Effector Orientation: x={orientation.x}, y={orientation.y}, z={orientation.z}')
 
 
 def main(args=None):
