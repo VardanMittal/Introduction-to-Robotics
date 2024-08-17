@@ -1,56 +1,34 @@
 import rclpy
 from rclpy.node import Node
-from sensor_msgs.msg import JointState
-import PyKDL as kdl
+from tf2_ros import TransformListener, Buffer
+from geometry_msgs.msg import TransformStamped
 
-class EndEffectorPosition(Node):
+class EndEffectorPose(Node):
+
     def __init__(self):
-        super().__init__('end_effector_position_node')
+        super().__init__('EndEffectorPose')
+        self.tf_buffer = Buffer()
+        self.tf_listener = TransformListener(self.tf_buffer, self)
+        self.timer = self.create_timer(1.0, self.lookup_transform)
 
-        # Create a kinematic chain
-        self.robot_chain = kdl.Chain()
-        self.robot_chain.addSegment(kdl.Segment(kdl.Joint(kdl.Joint.RotZ), kdl.Frame(kdl.Vector(0.5, 0.0, 0.0))))
-        self.robot_chain.addSegment(kdl.Segment(kdl.Joint(kdl.Joint.RotZ), kdl.Frame(kdl.Vector(0.5, 0.0, 0.0))))
+    def lookup_transform(self):
+        try:
+            now = rclpy.time.Time()
+            trans = self.tf_buffer.lookup_transform('world', 'end_effector', now)
+            position = trans.transform.translation
+            orientation = trans.transform.rotation
 
-        # Create a FK solver
-        self.fk_solver = kdl.ChainFkSolverPos_recursive(self.robot_chain)
-
-        # Initialize joint positions array
-        self.joint_positions = kdl.JntArray(self.robot_chain.getNrOfJoints())
-
-        # Create a subscriber to the joint states topic
-        self.subscription = self.create_subscription(
-            JointState,
-            '/joint_states',
-            self.joint_state_callback,
-            10
-        )
-
-    def joint_state_callback(self, msg):
-        for i in range(self.robot_chain.getNrOfJoints()):
-            self.joint_positions[i] = msg.position[i]
-
-        # Calculate the end effector position
-        end_effector_frame = kdl.Frame()
-        self.fk_solver.JntToCart(self.joint_positions, end_effector_frame)
-
-        # Output the end effector position
-        self.get_logger().info(
-            f"End Effector Position: x={end_effector_frame.p.x()} y={end_effector_frame.p.y()} z={end_effector_frame.p.z()}"
-        )
+            self.get_logger().info(f'End-Effector Position: x={position.x}, y={position.y}, z={position.z}')
+            self.get_logger().info(f'End-Effector Orientation: x={orientation.x}, y={orientation.y}, z={orientation.z}, w={orientation.w}')
+        except Exception as e:
+            self.get_logger().error(f'Could not transform: {str(e)}')
 
 def main(args=None):
     rclpy.init(args=args)
-
-    node = EndEffectorPosition()
-
-    try:
-        rclpy.spin(node)
-    except KeyboardInterrupt:
-        pass
-    finally:
-        node.destroy_node()
-        rclpy.shutdown()
+    node = EndEffectorPose()
+    rclpy.spin(node)
+    node.destroy_node()
+    rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
