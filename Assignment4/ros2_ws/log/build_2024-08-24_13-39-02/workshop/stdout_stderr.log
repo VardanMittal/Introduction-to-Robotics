@@ -1,0 +1,23 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+creating workshop.egg-info
+writing workshop.egg-info/PKG-INFO
+writing dependency_links to workshop.egg-info/dependency_links.txt
+writing entry points to workshop.egg-info/entry_points.txt
+writing requirements to workshop.egg-info/requires.txt
+writing top-level names to workshop.egg-info/top_level.txt
+writing manifest file 'workshop.egg-info/SOURCES.txt'
+reading manifest file 'workshop.egg-info/SOURCES.txt'
+writing manifest file 'workshop.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/vardan/Introduction-to-Robotics/Assignment4/ros2_ws/install/workshop/lib/python3.10/site-packages/workshop.egg-link (link to .)
+
+Installed /home/vardan/Introduction-to-Robotics/Assignment4/ros2_ws/build/workshop
+running symlink_data
+creating /home/vardan/Introduction-to-Robotics/Assignment4/ros2_ws/install/workshop/share/ament_index
+creating /home/vardan/Introduction-to-Robotics/Assignment4/ros2_ws/install/workshop/share/ament_index/resource_index
+creating /home/vardan/Introduction-to-Robotics/Assignment4/ros2_ws/install/workshop/share/ament_index/resource_index/packages
+symbolically linking /home/vardan/Introduction-to-Robotics/Assignment4/ros2_ws/build/workshop/resource/workshop -> /home/vardan/Introduction-to-Robotics/Assignment4/ros2_ws/install/workshop/share/ament_index/resource_index/packages
+symbolically linking /home/vardan/Introduction-to-Robotics/Assignment4/ros2_ws/build/workshop/package.xml -> /home/vardan/Introduction-to-Robotics/Assignment4/ros2_ws/install/workshop/share/workshop

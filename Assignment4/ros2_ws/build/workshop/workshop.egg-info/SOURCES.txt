@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+resource/workshop
+workshop/__init__.py
+workshop/num_publisher.py
+workshop/sum_publisher.py
+workshop.egg-info/PKG-INFO
+workshop.egg-info/SOURCES.txt
+workshop.egg-info/dependency_links.txt
+workshop.egg-info/entry_points.txt
+workshop.egg-info/requires.txt
+workshop.egg-info/top_level.txt
+workshop.egg-info/zip-safe

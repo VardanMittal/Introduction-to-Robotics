@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing workshop.egg-info/PKG-INFO
+writing dependency_links to workshop.egg-info/dependency_links.txt
+writing entry points to workshop.egg-info/entry_points.txt
+writing requirements to workshop.egg-info/requires.txt
+writing top-level names to workshop.egg-info/top_level.txt
+reading manifest file 'workshop.egg-info/SOURCES.txt'
+writing manifest file 'workshop.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/vardan/Introduction-to-Robotics/Assignment4/ros2_ws/install/workshop/lib/python3.10/site-packages/workshop.egg-link (link to .)
+Installing NumPublisher script to /home/vardan/Introduction-to-Robotics/Assignment4/ros2_ws/install/workshop/lib/workshop
+Installing SumPublisher script to /home/vardan/Introduction-to-Robotics/Assignment4/ros2_ws/install/workshop/lib/workshop
+
+Installed /home/vardan/Introduction-to-Robotics/Assignment4/ros2_ws/build/workshop
+running symlink_data

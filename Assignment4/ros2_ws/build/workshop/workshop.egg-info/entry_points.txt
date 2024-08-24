@@ -1,0 +1,4 @@
+[console_scripts]
+NumPublisher = workshop.num_publisher:main
+SumPublisher = workshop.sum_publisher:main
+
