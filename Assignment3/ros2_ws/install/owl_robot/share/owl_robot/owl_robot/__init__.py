@@ -1,1 +1,0 @@
-/home/vardan/Introduction-to-Robotics/Assignment3/ros2_ws/build/owl_robot/owl_robot/__init__.py
