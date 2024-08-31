@@ -1,0 +1,7 @@
+## Progress on Module 3
+
+- I have been able to open in gazebo but my controller file is not able to publish and simulate on /joint_states
+
+- to use the package you can use following commands
+
+rosrun controller gazebo_controller.py

@@ -3,35 +3,24 @@
 import rospy
 from sensor_msgs.msg import JointState
 from std_msgs.msg import Header
-import math
 
 def publish_joint_angles():
-    # Initialize the ROS node
     rospy.init_node('gazebo_controller', anonymous=True)
     
-    # Create a publisher for the /joint_states topic
     joint_pub = rospy.Publisher('/joint_states', JointState, queue_size=10)
+
+    rate = rospy.Rate(10)
     
-    # Set the rate at which to publish
-    rate = rospy.Rate(10)  # 10 Hz
-    
-    # Initialize the JointState message
     joint_state = JointState()
-    joint_state.header = Header()
-    joint_state.name = ['joint_1', 'joint_2', 'joint_3', 'joint_4']
-    joint_state.position = [0.0, 0.0, 0.0, 0.0]
+    joint_state.name = ['gripper', 'joint1', 'joint2', 'joint3', 'joint4']
+
+    joint_state.position = [0.4, 0.4, 0.35, 1.45, 1.0]
 
     while not rospy.is_shutdown():
-        # Update the joint angles here
-        joint_state.header.stamp = rospy.Time.now()
-        joint_state.position[0] = math.sin(rospy.get_time())  # Example of dynamic angle for joint_1
-        joint_state.position[1] = math.sin(rospy.get_time() + 1.0)  # Example for joint_2
-        joint_state.position[2] = math.sin(rospy.get_time() + 2.0)  # Example for joint_3
-        
-        # Publish the joint states
+        joint_state.header = Header(stamp=rospy.Time.now())
         joint_pub.publish(joint_state)
-        
-        # Sleep to maintain the desired rate
+        rospy.loginfo("Published joint angles: %s", joint_state.position)
+
         rate.sleep()
 
 if __name__ == '__main__':

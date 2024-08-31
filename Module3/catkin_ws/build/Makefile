@@ -831,6 +831,84 @@ open_manipulator_libs/fast:
 .PHONY : open_manipulator_libs/fast
 
 #=============================================================================
+# Target rules for targets named omx_control_node
+
+# Build rule for target.
+omx_control_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 omx_control_node
+.PHONY : omx_control_node
+
+# fast build rule for target.
+omx_control_node/fast:
+	$(MAKE) -f open_manipulator_controls/open_manipulator_hw/CMakeFiles/omx_control_node.dir/build.make open_manipulator_controls/open_manipulator_hw/CMakeFiles/omx_control_node.dir/build
+.PHONY : omx_control_node/fast
+
+#=============================================================================
+# Target rules for targets named controller_manager_msgs_generate_messages_py
+
+# Build rule for target.
+controller_manager_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_py
+.PHONY : controller_manager_msgs_generate_messages_py
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_py/fast:
+	$(MAKE) -f open_manipulator_controls/open_manipulator_hw/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build.make open_manipulator_controls/open_manipulator_hw/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build
+.PHONY : controller_manager_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named controller_manager_msgs_generate_messages_nodejs
+
+# Build rule for target.
+controller_manager_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_nodejs
+.PHONY : controller_manager_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f open_manipulator_controls/open_manipulator_hw/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build.make open_manipulator_controls/open_manipulator_hw/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build
+.PHONY : controller_manager_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named controller_manager_msgs_generate_messages_lisp
+
+# Build rule for target.
+controller_manager_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_lisp
+.PHONY : controller_manager_msgs_generate_messages_lisp
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f open_manipulator_controls/open_manipulator_hw/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build.make open_manipulator_controls/open_manipulator_hw/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build
+.PHONY : controller_manager_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named controller_manager_msgs_generate_messages_eus
+
+# Build rule for target.
+controller_manager_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_eus
+.PHONY : controller_manager_msgs_generate_messages_eus
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_eus/fast:
+	$(MAKE) -f open_manipulator_controls/open_manipulator_hw/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build.make open_manipulator_controls/open_manipulator_hw/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build
+.PHONY : controller_manager_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named controller_manager_msgs_generate_messages_cpp
+
+# Build rule for target.
+controller_manager_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_cpp
+.PHONY : controller_manager_msgs_generate_messages_cpp
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f open_manipulator_controls/open_manipulator_hw/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build.make open_manipulator_controls/open_manipulator_hw/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build
+.PHONY : controller_manager_msgs_generate_messages_cpp/fast
+
+#=============================================================================
 # Target rules for targets named open_manipulator_control_gui
 
 # Build rule for target.
@@ -1663,82 +1741,17 @@ tf2_msgs_generate_messages_py/fast:
 .PHONY : tf2_msgs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named controller_manager_msgs_generate_messages_cpp
+# Target rules for targets named open_manipulator_controllers
 
 # Build rule for target.
-controller_manager_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_cpp
-.PHONY : controller_manager_msgs_generate_messages_cpp
+open_manipulator_controllers: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 open_manipulator_controllers
+.PHONY : open_manipulator_controllers
 
 # fast build rule for target.
-controller_manager_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build.make open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build
-.PHONY : controller_manager_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named controller_manager_msgs_generate_messages_eus
-
-# Build rule for target.
-controller_manager_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_eus
-.PHONY : controller_manager_msgs_generate_messages_eus
-
-# fast build rule for target.
-controller_manager_msgs_generate_messages_eus/fast:
-	$(MAKE) -f open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build.make open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build
-.PHONY : controller_manager_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named controller_manager_msgs_generate_messages_nodejs
-
-# Build rule for target.
-controller_manager_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_nodejs
-.PHONY : controller_manager_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-controller_manager_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build.make open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build
-.PHONY : controller_manager_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named controller_manager_msgs_generate_messages_py
-
-# Build rule for target.
-controller_manager_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_py
-.PHONY : controller_manager_msgs_generate_messages_py
-
-# fast build rule for target.
-controller_manager_msgs_generate_messages_py/fast:
-	$(MAKE) -f open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build.make open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build
-.PHONY : controller_manager_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named open_manipulator_gazebo_xacro_generated_to_devel_space_
-
-# Build rule for target.
-open_manipulator_gazebo_xacro_generated_to_devel_space_: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 open_manipulator_gazebo_xacro_generated_to_devel_space_
-.PHONY : open_manipulator_gazebo_xacro_generated_to_devel_space_
-
-# fast build rule for target.
-open_manipulator_gazebo_xacro_generated_to_devel_space_/fast:
-	$(MAKE) -f open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/open_manipulator_gazebo_xacro_generated_to_devel_space_.dir/build.make open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/open_manipulator_gazebo_xacro_generated_to_devel_space_.dir/build
-.PHONY : open_manipulator_gazebo_xacro_generated_to_devel_space_/fast
-
-#=============================================================================
-# Target rules for targets named controller_manager_msgs_generate_messages_lisp
-
-# Build rule for target.
-controller_manager_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_lisp
-.PHONY : controller_manager_msgs_generate_messages_lisp
-
-# fast build rule for target.
-controller_manager_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build.make open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build
-.PHONY : controller_manager_msgs_generate_messages_lisp/fast
+open_manipulator_controllers/fast:
+	$(MAKE) -f open_manipulator_controls/open_manipulator_controllers/CMakeFiles/open_manipulator_controllers.dir/build.make open_manipulator_controls/open_manipulator_controllers/CMakeFiles/open_manipulator_controllers.dir/build
+.PHONY : open_manipulator_controllers/fast
 
 #=============================================================================
 # Target rules for targets named omx_gripper_sub_publisher
@@ -1752,6 +1765,19 @@ omx_gripper_sub_publisher: cmake_check_build_system
 omx_gripper_sub_publisher/fast:
 	$(MAKE) -f open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/build.make open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/build
 .PHONY : omx_gripper_sub_publisher/fast
+
+#=============================================================================
+# Target rules for targets named open_manipulator_gazebo_xacro_generated_to_devel_space_
+
+# Build rule for target.
+open_manipulator_gazebo_xacro_generated_to_devel_space_: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 open_manipulator_gazebo_xacro_generated_to_devel_space_
+.PHONY : open_manipulator_gazebo_xacro_generated_to_devel_space_
+
+# fast build rule for target.
+open_manipulator_gazebo_xacro_generated_to_devel_space_/fast:
+	$(MAKE) -f open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/open_manipulator_gazebo_xacro_generated_to_devel_space_.dir/build.make open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/open_manipulator_gazebo_xacro_generated_to_devel_space_.dir/build
+.PHONY : open_manipulator_gazebo_xacro_generated_to_devel_space_/fast
 
 # Help Target
 help:
@@ -1817,6 +1843,12 @@ help:
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... open_manipulator_libs"
+	@echo "... omx_control_node"
+	@echo "... controller_manager_msgs_generate_messages_py"
+	@echo "... controller_manager_msgs_generate_messages_nodejs"
+	@echo "... controller_manager_msgs_generate_messages_lisp"
+	@echo "... controller_manager_msgs_generate_messages_eus"
+	@echo "... controller_manager_msgs_generate_messages_cpp"
 	@echo "... open_manipulator_control_gui"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_nodejs"
@@ -1881,13 +1913,9 @@ help:
 	@echo "... tf2_msgs_generate_messages_nodejs"
 	@echo "... control_msgs_generate_messages_py"
 	@echo "... tf2_msgs_generate_messages_py"
-	@echo "... controller_manager_msgs_generate_messages_cpp"
-	@echo "... controller_manager_msgs_generate_messages_eus"
-	@echo "... controller_manager_msgs_generate_messages_nodejs"
-	@echo "... controller_manager_msgs_generate_messages_py"
-	@echo "... open_manipulator_gazebo_xacro_generated_to_devel_space_"
-	@echo "... controller_manager_msgs_generate_messages_lisp"
+	@echo "... open_manipulator_controllers"
 	@echo "... omx_gripper_sub_publisher"
+	@echo "... open_manipulator_gazebo_xacro_generated_to_devel_space_"
 .PHONY : help
 
 

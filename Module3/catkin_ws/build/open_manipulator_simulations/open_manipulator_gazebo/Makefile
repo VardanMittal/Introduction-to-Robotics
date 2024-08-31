@@ -68,16 +68,6 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -90,28 +80,15 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
 
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
+.PHONY : list_install_components/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -134,6 +111,29 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,64 +168,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule:
-	cd /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule
-.PHONY : open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule
+open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/rule:
+	cd /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/rule
+.PHONY : open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/rule
 
 # Convenience name for target.
-controller_manager_msgs_generate_messages_cpp: open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule
+omx_gripper_sub_publisher: open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/rule
 
-.PHONY : controller_manager_msgs_generate_messages_cpp
+.PHONY : omx_gripper_sub_publisher
 
 # fast build rule for target.
-controller_manager_msgs_generate_messages_cpp/fast:
-	cd /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build && $(MAKE) -f open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build.make open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build
-.PHONY : controller_manager_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule:
-	cd /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule
-.PHONY : open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-controller_manager_msgs_generate_messages_eus: open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule
-
-.PHONY : controller_manager_msgs_generate_messages_eus
-
-# fast build rule for target.
-controller_manager_msgs_generate_messages_eus/fast:
-	cd /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build && $(MAKE) -f open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build.make open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build
-.PHONY : controller_manager_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule
-.PHONY : open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-controller_manager_msgs_generate_messages_nodejs: open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : controller_manager_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-controller_manager_msgs_generate_messages_nodejs/fast:
-	cd /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build && $(MAKE) -f open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build.make open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build
-.PHONY : controller_manager_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule:
-	cd /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
-.PHONY : open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-controller_manager_msgs_generate_messages_py: open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
-
-.PHONY : controller_manager_msgs_generate_messages_py
-
-# fast build rule for target.
-controller_manager_msgs_generate_messages_py/fast:
-	cd /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build && $(MAKE) -f open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build.make open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build
-.PHONY : controller_manager_msgs_generate_messages_py/fast
+omx_gripper_sub_publisher/fast:
+	cd /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build && $(MAKE) -f open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/build.make open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/build
+.PHONY : omx_gripper_sub_publisher/fast
 
 # Convenience name for target.
 open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/open_manipulator_gazebo_xacro_generated_to_devel_space_.dir/rule:
@@ -241,36 +196,6 @@ open_manipulator_gazebo_xacro_generated_to_devel_space_: open_manipulator_simula
 open_manipulator_gazebo_xacro_generated_to_devel_space_/fast:
 	cd /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build && $(MAKE) -f open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/open_manipulator_gazebo_xacro_generated_to_devel_space_.dir/build.make open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/open_manipulator_gazebo_xacro_generated_to_devel_space_.dir/build
 .PHONY : open_manipulator_gazebo_xacro_generated_to_devel_space_/fast
-
-# Convenience name for target.
-open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule:
-	cd /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
-.PHONY : open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-controller_manager_msgs_generate_messages_lisp: open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : controller_manager_msgs_generate_messages_lisp
-
-# fast build rule for target.
-controller_manager_msgs_generate_messages_lisp/fast:
-	cd /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build && $(MAKE) -f open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build.make open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build
-.PHONY : controller_manager_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/rule:
-	cd /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/rule
-.PHONY : open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/rule
-
-# Convenience name for target.
-omx_gripper_sub_publisher: open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/rule
-
-.PHONY : omx_gripper_sub_publisher
-
-# fast build rule for target.
-omx_gripper_sub_publisher/fast:
-	cd /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build && $(MAKE) -f open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/build.make open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/build
-.PHONY : omx_gripper_sub_publisher/fast
 
 src/omx_gripper_sub_publisher.o: src/omx_gripper_sub_publisher.cpp.o
 
@@ -306,19 +231,14 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... controller_manager_msgs_generate_messages_cpp"
-	@echo "... controller_manager_msgs_generate_messages_eus"
-	@echo "... list_install_components"
 	@echo "... install"
-	@echo "... controller_manager_msgs_generate_messages_nodejs"
-	@echo "... controller_manager_msgs_generate_messages_py"
-	@echo "... open_manipulator_gazebo_xacro_generated_to_devel_space_"
-	@echo "... install/local"
-	@echo "... controller_manager_msgs_generate_messages_lisp"
-	@echo "... omx_gripper_sub_publisher"
-	@echo "... test"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test"
+	@echo "... omx_gripper_sub_publisher"
+	@echo "... install/local"
+	@echo "... open_manipulator_gazebo_xacro_generated_to_devel_space_"
 	@echo "... src/omx_gripper_sub_publisher.o"
 	@echo "... src/omx_gripper_sub_publisher.i"
 	@echo "... src/omx_gripper_sub_publisher.s"
