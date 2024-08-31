@@ -4,4 +4,6 @@
 
 - to use the package you can use following commands
 
-rosrun controller gazebo_controller.py
+`rosrun controller gazebo_controller.py
+`
+- Unable to use gravity compenstion as ports not available will figure this out soon
