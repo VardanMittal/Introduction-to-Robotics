@@ -57,6 +57,7 @@ all: gtest/all
 all: open_manipulator/open_manipulator/all
 all: open_manipulator_simulations/open_manipulator_simulations/all
 all: open_manipulator_msgs/all
+all: controller/all
 all: open_manipulator/open_manipulator_libs/all
 all: open_manipulator/open_manipulator_control_gui/all
 all: open_manipulator/open_manipulator_controller/all
@@ -72,6 +73,7 @@ preinstall: gtest/preinstall
 preinstall: open_manipulator/open_manipulator/preinstall
 preinstall: open_manipulator_simulations/open_manipulator_simulations/preinstall
 preinstall: open_manipulator_msgs/preinstall
+preinstall: controller/preinstall
 preinstall: open_manipulator/open_manipulator_libs/preinstall
 preinstall: open_manipulator/open_manipulator_control_gui/preinstall
 preinstall: open_manipulator/open_manipulator_controller/preinstall
@@ -92,6 +94,7 @@ clean: gtest/clean
 clean: open_manipulator/open_manipulator/clean
 clean: open_manipulator_simulations/open_manipulator_simulations/clean
 clean: open_manipulator_msgs/clean
+clean: controller/clean
 clean: open_manipulator/open_manipulator_libs/clean
 clean: open_manipulator/open_manipulator_control_gui/clean
 clean: open_manipulator/open_manipulator_controller/clean
@@ -101,6 +104,33 @@ clean: open_manipulator/open_manipulator_description/clean
 clean: open_manipulator_simulations/open_manipulator_gazebo/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory controller
+
+# Recursive "all" directory target.
+controller/all:
+
+.PHONY : controller/all
+
+# Recursive "preinstall" directory target.
+controller/preinstall:
+
+.PHONY : controller/preinstall
+
+# Recursive "clean" directory target.
+controller/clean: controller/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+controller/clean: controller/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+controller/clean: controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+controller/clean: controller/CMakeFiles/roscpp_generate_messages_py.dir/clean
+controller/clean: controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+controller/clean: controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+controller/clean: controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+controller/clean: controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+controller/clean: controller/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+controller/clean: controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+
+.PHONY : controller/clean
 
 #=============================================================================
 # Directory level rules for directory gtest
@@ -255,16 +285,6 @@ open_manipulator/open_manipulator_libs/preinstall:
 .PHONY : open_manipulator/open_manipulator_libs/preinstall
 
 # Recursive "clean" directory target.
-open_manipulator/open_manipulator_libs/clean: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-open_manipulator/open_manipulator_libs/clean: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_eus.dir/clean
-open_manipulator/open_manipulator_libs/clean: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
-open_manipulator/open_manipulator_libs/clean: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_py.dir/clean
-open_manipulator/open_manipulator_libs/clean: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
-open_manipulator/open_manipulator_libs/clean: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-open_manipulator/open_manipulator_libs/clean: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
-open_manipulator/open_manipulator_libs/clean: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-open_manipulator/open_manipulator_libs/clean: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-open_manipulator/open_manipulator_libs/clean: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 open_manipulator/open_manipulator_libs/clean: open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/clean
 
 .PHONY : open_manipulator/open_manipulator_libs/clean
@@ -1583,274 +1603,274 @@ open_manipulator_msgs/CMakeFiles/open_manipulator_msgs_generate_messages_nodejs.
 .PHONY : open_manipulator_msgs/CMakeFiles/open_manipulator_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_cpp.dir
+# Target rules for target controller/CMakeFiles/roscpp_generate_messages_cpp.dir
 
 # All Build rule for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+controller/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
+	$(MAKE) -f controller/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make controller/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
+	$(MAKE) -f controller/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make controller/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_cpp"
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+.PHONY : controller/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
+controller/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 controller/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles 0
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : controller/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_cpp: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+roscpp_generate_messages_cpp: controller/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 .PHONY : roscpp_generate_messages_cpp
 
 # clean rule for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+controller/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
+	$(MAKE) -f controller/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make controller/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+.PHONY : controller/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_eus.dir
+# Target rules for target controller/CMakeFiles/roscpp_generate_messages_eus.dir
 
 # All Build rule for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_eus.dir/all:
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_eus.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_eus.dir/depend
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_eus.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_eus.dir/build
+controller/CMakeFiles/roscpp_generate_messages_eus.dir/all:
+	$(MAKE) -f controller/CMakeFiles/roscpp_generate_messages_eus.dir/build.make controller/CMakeFiles/roscpp_generate_messages_eus.dir/depend
+	$(MAKE) -f controller/CMakeFiles/roscpp_generate_messages_eus.dir/build.make controller/CMakeFiles/roscpp_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_eus"
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_eus.dir/all
+.PHONY : controller/CMakeFiles/roscpp_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_eus.dir/rule: cmake_check_build_system
+controller/CMakeFiles/roscpp_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 controller/CMakeFiles/roscpp_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles 0
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+.PHONY : controller/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_eus: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+roscpp_generate_messages_eus: controller/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 .PHONY : roscpp_generate_messages_eus
 
 # clean rule for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_eus.dir/clean:
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_eus.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_eus.dir/clean
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+controller/CMakeFiles/roscpp_generate_messages_eus.dir/clean:
+	$(MAKE) -f controller/CMakeFiles/roscpp_generate_messages_eus.dir/build.make controller/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+.PHONY : controller/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir
+# Target rules for target controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_nodejs"
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+.PHONY : controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles 0
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+.PHONY : controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+rosgraph_msgs_generate_messages_nodejs: controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 .PHONY : rosgraph_msgs_generate_messages_nodejs
 
 # clean rule for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+.PHONY : controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_py.dir
+# Target rules for target controller/CMakeFiles/roscpp_generate_messages_py.dir
 
 # All Build rule for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_py.dir/all:
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_py.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_py.dir/depend
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_py.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_py.dir/build
+controller/CMakeFiles/roscpp_generate_messages_py.dir/all:
+	$(MAKE) -f controller/CMakeFiles/roscpp_generate_messages_py.dir/build.make controller/CMakeFiles/roscpp_generate_messages_py.dir/depend
+	$(MAKE) -f controller/CMakeFiles/roscpp_generate_messages_py.dir/build.make controller/CMakeFiles/roscpp_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_py"
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_py.dir/all
+.PHONY : controller/CMakeFiles/roscpp_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
+controller/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 controller/CMakeFiles/roscpp_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles 0
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : controller/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_py: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_py.dir/rule
+roscpp_generate_messages_py: controller/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 .PHONY : roscpp_generate_messages_py
 
 # clean rule for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_py.dir/clean:
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_py.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_py.dir/clean
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_py.dir/clean
+controller/CMakeFiles/roscpp_generate_messages_py.dir/clean:
+	$(MAKE) -f controller/CMakeFiles/roscpp_generate_messages_py.dir/build.make controller/CMakeFiles/roscpp_generate_messages_py.dir/clean
+.PHONY : controller/CMakeFiles/roscpp_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_nodejs.dir
+# Target rules for target controller/CMakeFiles/roscpp_generate_messages_nodejs.dir
 
 # All Build rule for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_nodejs.dir/all:
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/all:
+	$(MAKE) -f controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
+	$(MAKE) -f controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_nodejs"
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+.PHONY : controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule: cmake_check_build_system
+controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles 0
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+.PHONY : controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_nodejs: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+roscpp_generate_messages_nodejs: controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 .PHONY : roscpp_generate_messages_nodejs
 
 # clean rule for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+.PHONY : controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
+# Target rules for target controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_cpp"
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+.PHONY : controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles 0
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+rosgraph_msgs_generate_messages_cpp: controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 .PHONY : rosgraph_msgs_generate_messages_cpp
 
 # clean rule for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+.PHONY : controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
+# Target rules for target controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_eus"
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+.PHONY : controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles 0
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+.PHONY : controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_eus: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+rosgraph_msgs_generate_messages_eus: controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 .PHONY : rosgraph_msgs_generate_messages_eus
 
 # clean rule for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+.PHONY : controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
+# Target rules for target controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_lisp"
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+.PHONY : controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles 0
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+rosgraph_msgs_generate_messages_lisp: controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 .PHONY : rosgraph_msgs_generate_messages_lisp
 
 # clean rule for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+.PHONY : controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 
 #=============================================================================
-# Target rules for target open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_lisp.dir
+# Target rules for target controller/CMakeFiles/roscpp_generate_messages_lisp.dir
 
 # All Build rule for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+controller/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
+	$(MAKE) -f controller/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make controller/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
+	$(MAKE) -f controller/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make controller/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_lisp"
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+.PHONY : controller/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
+controller/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 controller/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles 0
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : controller/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_lisp: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+roscpp_generate_messages_lisp: controller/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 .PHONY : roscpp_generate_messages_lisp
 
 # clean rule for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+controller/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
+	$(MAKE) -f controller/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make controller/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+.PHONY : controller/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 
 #=============================================================================
-# Target rules for target open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
+# Target rules for target controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_py"
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+.PHONY : controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles 0
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_py: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+rosgraph_msgs_generate_messages_py: controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 .PHONY : rosgraph_msgs_generate_messages_py
 
 # clean rule for target.
-open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
-.PHONY : open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+.PHONY : controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
 # Target rules for target open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir
@@ -1861,16 +1881,16 @@ open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/all:
 open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/all: open_manipulator_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/all: open_manipulator_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/all: open_manipulator_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_eus.dir/all
-open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_py.dir/all
-open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/all: controller/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/all: controller/CMakeFiles/roscpp_generate_messages_eus.dir/all
+open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/all: controller/CMakeFiles/roscpp_generate_messages_py.dir/all
+open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/all: controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/all: controller/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/depend
 	$(MAKE) -f open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/build.make open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vardan20/Introduction-to-Robotics/Module3/catkin_ws/build/CMakeFiles --progress-num=24,25,26,27,28 "Built target open_manipulator_libs"
@@ -1912,16 +1932,16 @@ open_manipulator/open_manipulator_control_gui/CMakeFiles/open_manipulator_contro
 open_manipulator/open_manipulator_control_gui/CMakeFiles/open_manipulator_control_gui.dir/all: open_manipulator_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
 open_manipulator/open_manipulator_control_gui/CMakeFiles/open_manipulator_control_gui.dir/all: open_manipulator_msgs/CMakeFiles/open_manipulator_msgs_generate_messages_lisp.dir/all
 open_manipulator/open_manipulator_control_gui/CMakeFiles/open_manipulator_control_gui.dir/all: open_manipulator_msgs/CMakeFiles/open_manipulator_msgs_generate_messages_nodejs.dir/all
-open_manipulator/open_manipulator_control_gui/CMakeFiles/open_manipulator_control_gui.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-open_manipulator/open_manipulator_control_gui/CMakeFiles/open_manipulator_control_gui.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_eus.dir/all
-open_manipulator/open_manipulator_control_gui/CMakeFiles/open_manipulator_control_gui.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-open_manipulator/open_manipulator_control_gui/CMakeFiles/open_manipulator_control_gui.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_py.dir/all
-open_manipulator/open_manipulator_control_gui/CMakeFiles/open_manipulator_control_gui.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-open_manipulator/open_manipulator_control_gui/CMakeFiles/open_manipulator_control_gui.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-open_manipulator/open_manipulator_control_gui/CMakeFiles/open_manipulator_control_gui.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-open_manipulator/open_manipulator_control_gui/CMakeFiles/open_manipulator_control_gui.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-open_manipulator/open_manipulator_control_gui/CMakeFiles/open_manipulator_control_gui.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-open_manipulator/open_manipulator_control_gui/CMakeFiles/open_manipulator_control_gui.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+open_manipulator/open_manipulator_control_gui/CMakeFiles/open_manipulator_control_gui.dir/all: controller/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+open_manipulator/open_manipulator_control_gui/CMakeFiles/open_manipulator_control_gui.dir/all: controller/CMakeFiles/roscpp_generate_messages_eus.dir/all
+open_manipulator/open_manipulator_control_gui/CMakeFiles/open_manipulator_control_gui.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+open_manipulator/open_manipulator_control_gui/CMakeFiles/open_manipulator_control_gui.dir/all: controller/CMakeFiles/roscpp_generate_messages_py.dir/all
+open_manipulator/open_manipulator_control_gui/CMakeFiles/open_manipulator_control_gui.dir/all: controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+open_manipulator/open_manipulator_control_gui/CMakeFiles/open_manipulator_control_gui.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+open_manipulator/open_manipulator_control_gui/CMakeFiles/open_manipulator_control_gui.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+open_manipulator/open_manipulator_control_gui/CMakeFiles/open_manipulator_control_gui.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+open_manipulator/open_manipulator_control_gui/CMakeFiles/open_manipulator_control_gui.dir/all: controller/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+open_manipulator/open_manipulator_control_gui/CMakeFiles/open_manipulator_control_gui.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 open_manipulator/open_manipulator_control_gui/CMakeFiles/open_manipulator_control_gui.dir/all: open_manipulator/open_manipulator_control_gui/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 open_manipulator/open_manipulator_control_gui/CMakeFiles/open_manipulator_control_gui.dir/all: open_manipulator/open_manipulator_control_gui/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
 open_manipulator/open_manipulator_control_gui/CMakeFiles/open_manipulator_control_gui.dir/all: open_manipulator/open_manipulator_control_gui/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
@@ -2211,16 +2231,16 @@ open_manipulator/open_manipulator_controller/CMakeFiles/open_manipulator_control
 open_manipulator/open_manipulator_controller/CMakeFiles/open_manipulator_controller.dir/all: open_manipulator_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
 open_manipulator/open_manipulator_controller/CMakeFiles/open_manipulator_controller.dir/all: open_manipulator_msgs/CMakeFiles/open_manipulator_msgs_generate_messages_lisp.dir/all
 open_manipulator/open_manipulator_controller/CMakeFiles/open_manipulator_controller.dir/all: open_manipulator_msgs/CMakeFiles/open_manipulator_msgs_generate_messages_nodejs.dir/all
-open_manipulator/open_manipulator_controller/CMakeFiles/open_manipulator_controller.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-open_manipulator/open_manipulator_controller/CMakeFiles/open_manipulator_controller.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_eus.dir/all
-open_manipulator/open_manipulator_controller/CMakeFiles/open_manipulator_controller.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-open_manipulator/open_manipulator_controller/CMakeFiles/open_manipulator_controller.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_py.dir/all
-open_manipulator/open_manipulator_controller/CMakeFiles/open_manipulator_controller.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-open_manipulator/open_manipulator_controller/CMakeFiles/open_manipulator_controller.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-open_manipulator/open_manipulator_controller/CMakeFiles/open_manipulator_controller.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-open_manipulator/open_manipulator_controller/CMakeFiles/open_manipulator_controller.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-open_manipulator/open_manipulator_controller/CMakeFiles/open_manipulator_controller.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-open_manipulator/open_manipulator_controller/CMakeFiles/open_manipulator_controller.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+open_manipulator/open_manipulator_controller/CMakeFiles/open_manipulator_controller.dir/all: controller/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+open_manipulator/open_manipulator_controller/CMakeFiles/open_manipulator_controller.dir/all: controller/CMakeFiles/roscpp_generate_messages_eus.dir/all
+open_manipulator/open_manipulator_controller/CMakeFiles/open_manipulator_controller.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+open_manipulator/open_manipulator_controller/CMakeFiles/open_manipulator_controller.dir/all: controller/CMakeFiles/roscpp_generate_messages_py.dir/all
+open_manipulator/open_manipulator_controller/CMakeFiles/open_manipulator_controller.dir/all: controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+open_manipulator/open_manipulator_controller/CMakeFiles/open_manipulator_controller.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+open_manipulator/open_manipulator_controller/CMakeFiles/open_manipulator_controller.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+open_manipulator/open_manipulator_controller/CMakeFiles/open_manipulator_controller.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+open_manipulator/open_manipulator_controller/CMakeFiles/open_manipulator_controller.dir/all: controller/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+open_manipulator/open_manipulator_controller/CMakeFiles/open_manipulator_controller.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 open_manipulator/open_manipulator_controller/CMakeFiles/open_manipulator_controller.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/open_manipulator_libs.dir/all
 open_manipulator/open_manipulator_controller/CMakeFiles/open_manipulator_controller.dir/all: open_manipulator/open_manipulator_control_gui/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 open_manipulator/open_manipulator_controller/CMakeFiles/open_manipulator_controller.dir/all: open_manipulator/open_manipulator_control_gui/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
@@ -2300,16 +2320,16 @@ open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_joys
 open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_joystick.dir/all: open_manipulator_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
 open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_joystick.dir/all: open_manipulator_msgs/CMakeFiles/open_manipulator_msgs_generate_messages_lisp.dir/all
 open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_joystick.dir/all: open_manipulator_msgs/CMakeFiles/open_manipulator_msgs_generate_messages_nodejs.dir/all
-open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_joystick.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_joystick.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_eus.dir/all
-open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_joystick.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_joystick.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_py.dir/all
-open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_joystick.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_joystick.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_joystick.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_joystick.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_joystick.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_joystick.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_joystick.dir/all: controller/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_joystick.dir/all: controller/CMakeFiles/roscpp_generate_messages_eus.dir/all
+open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_joystick.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_joystick.dir/all: controller/CMakeFiles/roscpp_generate_messages_py.dir/all
+open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_joystick.dir/all: controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_joystick.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_joystick.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_joystick.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_joystick.dir/all: controller/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_joystick.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_joystick.dir/all: open_manipulator/open_manipulator_control_gui/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_joystick.dir/all: open_manipulator/open_manipulator_control_gui/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
 open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_joystick.dir/all: open_manipulator/open_manipulator_control_gui/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
@@ -2356,16 +2376,16 @@ open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_keyb
 open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_keyboard.dir/all: open_manipulator_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
 open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_keyboard.dir/all: open_manipulator_msgs/CMakeFiles/open_manipulator_msgs_generate_messages_lisp.dir/all
 open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_keyboard.dir/all: open_manipulator_msgs/CMakeFiles/open_manipulator_msgs_generate_messages_nodejs.dir/all
-open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_keyboard.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_keyboard.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_eus.dir/all
-open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_keyboard.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_keyboard.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_py.dir/all
-open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_keyboard.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_keyboard.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_keyboard.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_keyboard.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_keyboard.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_keyboard.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_keyboard.dir/all: controller/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_keyboard.dir/all: controller/CMakeFiles/roscpp_generate_messages_eus.dir/all
+open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_keyboard.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_keyboard.dir/all: controller/CMakeFiles/roscpp_generate_messages_py.dir/all
+open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_keyboard.dir/all: controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_keyboard.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_keyboard.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_keyboard.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_keyboard.dir/all: controller/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_keyboard.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_keyboard.dir/all: open_manipulator/open_manipulator_control_gui/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_keyboard.dir/all: open_manipulator/open_manipulator_control_gui/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
 open_manipulator/open_manipulator_teleop/CMakeFiles/open_manipulator_teleop_keyboard.dir/all: open_manipulator/open_manipulator_control_gui/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
@@ -3919,16 +3939,16 @@ open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_
 open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/all: open_manipulator_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/all: open_manipulator_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/all: open_manipulator_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_eus.dir/all
-open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_py.dir/all
-open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/all: open_manipulator/open_manipulator_libs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/all: controller/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/all: controller/CMakeFiles/roscpp_generate_messages_eus.dir/all
+open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/all: controller/CMakeFiles/roscpp_generate_messages_py.dir/all
+open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/all: controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/all: controller/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/all: controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/all: open_manipulator/open_manipulator_control_gui/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/all: open_manipulator/open_manipulator_control_gui/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
 open_manipulator_simulations/open_manipulator_gazebo/CMakeFiles/omx_gripper_sub_publisher.dir/all: open_manipulator/open_manipulator_control_gui/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
