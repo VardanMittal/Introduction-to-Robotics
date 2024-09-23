@@ -1,0 +1,9 @@
+/home/vardan/Introduction-to-Robotics/Module2/ros2_ws/build/moveit_pkgs/CMakeFiles/uninstall.dir
+/home/vardan/Introduction-to-Robotics/Module2/ros2_ws/build/moveit_pkgs/CMakeFiles/moveit_pkgs_uninstall.dir
+/home/vardan/Introduction-to-Robotics/Module2/ros2_ws/build/moveit_pkgs/CMakeFiles/test.dir
+/home/vardan/Introduction-to-Robotics/Module2/ros2_ws/build/moveit_pkgs/CMakeFiles/edit_cache.dir
+/home/vardan/Introduction-to-Robotics/Module2/ros2_ws/build/moveit_pkgs/CMakeFiles/rebuild_cache.dir
+/home/vardan/Introduction-to-Robotics/Module2/ros2_ws/build/moveit_pkgs/CMakeFiles/list_install_components.dir
+/home/vardan/Introduction-to-Robotics/Module2/ros2_ws/build/moveit_pkgs/CMakeFiles/install.dir
+/home/vardan/Introduction-to-Robotics/Module2/ros2_ws/build/moveit_pkgs/CMakeFiles/install/local.dir
+/home/vardan/Introduction-to-Robotics/Module2/ros2_ws/build/moveit_pkgs/CMakeFiles/install/strip.dir

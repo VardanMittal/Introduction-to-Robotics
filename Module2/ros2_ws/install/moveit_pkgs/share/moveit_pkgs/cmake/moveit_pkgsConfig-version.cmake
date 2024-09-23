@@ -1,0 +1,1 @@
+/home/vardan/Introduction-to-Robotics/Module2/ros2_ws/build/moveit_pkgs/ament_cmake_core/moveit_pkgsConfig-version.cmake
